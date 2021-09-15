@@ -7,7 +7,7 @@ import pytest
 @pytest.mark.parametrize("pairs,newx,expectedY",[
     (((1, 2),(2,4)),3,6)
 ])
-def test_sovleForY(pairs,newx, expectedY):
+def test_solveForY(pairs,newx, expectedY):
     from whatsY import solveForY
     answer = solveForY(pairs,newx)
     assert answer == expectedY
